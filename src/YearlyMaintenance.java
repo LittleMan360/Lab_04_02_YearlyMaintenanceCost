@@ -11,8 +11,12 @@ public class YearlyMaintenance
 
         totalMaintenance = springMaintenance + summerMaintenance + fallMaintenance + winterMaintenance;
 
-        System.out.println("Your spring maintenance cost is " + springMaintenance + "Your summer maintenance cost is " + summerMaintenance + "Your fall maintenance cost is " + fallMaintenance + "Your winter maintenance cost is " + winterMaintenance);
-        System.out.println("Your total yearly maintenance cost is " + totalMaintenance);
+        System.out.printf("Your spring maintenance cost is $%,.2f", + springMaintenance);
+        System.out.printf(" Your summer maintenance cost is $%,.2f", + summerMaintenance);
+        System.out.printf(" Your fall maintenance cost is $%,.2f", + fallMaintenance);
+        System.out.printf(" Your winter maintenance cost is $%,.2f", + winterMaintenance);
+        System.out.printf(" Your total yearly maintenance cost is $%,.2f", + totalMaintenance);
+
 
     }
 }
